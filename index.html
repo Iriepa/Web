@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="principal.css">
+	<link rel="stylesheet" type="text/css" href="flechas.css">
+	<title>League of Legends</title>
+</head>
+<body onload="cargarEquipos()">
+	
+	<nav class="contenedor1">
+	<ul class="ul1">
+		<li><a href="#">Heroes</a></li>
+		<li><a href="#">Store</a></li>
+		<li class="active"><a href="#">Watch</a></li>
+		<li><a href="#">Learn</a></li>
+		<li><a href="#">Arcade</a></li>
+		<input type="search" id="input-search" placeholder="Buscar" oninput="buscador()">
+	</ul>
+</nav>
+<br><br>
+
+
+<button class="arrow left" onclick="flechaI()">
+  <svg width="60px" height="80px" viewBox="0 0 50 80" xml:space="preserve">
+    <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="
+	45.63,75.8 0.375,38.087 45.63,0.375 "/>
+  </svg>  
+</button>
+
+<div class="partidas"> 
+
+	<div class="partidos" id="partida1" onclick="cargarGanadorPerdedor(0)">
+		<div class="e1" id="partida1.1"></div>
+		<div class="vs">VS</div>
+		<div class="e2" id="partida1.2"></div>
+	</div>
+	<div class="partidos" id="partida2" onclick="cargarGanadorPerdedor(1)">
+		<div class="e1" id="partida2.1"></div>
+		<div class="vs">VS</div>
+		<div class="e2" id="partida2.2"></div>
+	</div>
+	<div class="partidos" id="partida3" onclick="cargarGanadorPerdedor(2)">
+		<div class="e1" id="partida3.1"></div>
+		<div class="vs">VS</div>
+		<div class="e2" id="partida3.2"></div>
+	</div>
+	<div class="partidos" id="partida4" onclick="cargarGanadorPerdedor(3)">
+		<div class="e1" id="partida4.1"></div>
+		<div class="vs">VS</div>
+		<div class="e2" id="partida4.2"></div>
+	</div>
+	<div class="partidos" id="partida5" onclick="cargarGanadorPerdedor(4)">
+		<div class="e1" id="partida5.1"></div>
+		<div class="vs">VS</div>
+		<div class="e2" id="partida5.2"></div>
+	</div>
+	<div class="partidos" id="partida1" onclick="cargarGanadorPerdedor(5)">
+		<div class="e1" id="partida6.1"></div>
+		<div class="vs">VS</div>
+		<div class="e2" id="partida6.2"></div>
+	</div>
+	<div class="partidos" id="partida2" onclick="cargarGanadorPerdedor(6)">
+		<div class="e1" id="partida7.1"></div>
+		<div class="vs">VS</div>
+		<div class="e2" id="partida7.2"></div>
+	</div>
+	<div class="partidos" id="partida3" onclick="cargarGanadorPerdedor(7)">
+		<div class="e1" id="partida8.1"></div>
+		<div class="vs">VS</div>
+		<div class="e2" id="partida8.2"></div>
+	</div>
+	<div class="partidos" id="partida4" onclick="cargarGanadorPerdedor(8)">
+		<div class="e1" id="partida9.1"></div>
+		<div class="vs">VS</div>
+		<div class="e2" id="partida9.2"></div>
+	</div>
+	<div class="partidos" id="partida5" onclick="cargarGanadorPerdedor(9)">
+		<div class="e1" id="partida10.1"></div>
+		<div class="vs">VS</div>
+		<div class="e2" id="partida10.2"></div>
+	</div>
+	<div class="partidos" id="partida6" onclick="cargarGanadorPerdedor(10)">
+		<div class="e1" id="partida11.1"></div>
+		<div class="vs">VS</div>
+		<div class="e2" id="partida11.2"></div>
+	</div>
+	<div class="partidos" id="partida7" onclick="cargarGanadorPerdedor(11)">
+		<div class="e1" id="partida12.1"></div>
+		<div class="vs">VS</div>
+		<div class="e2" id="partida12.2"></div>
+	</div>
+	<div class="partidos" id="partida8" onclick="cargarGanadorPerdedor(12)">
+		<div class="e1" id="partida13.1"></div>
+		<div class="vs">VS</div>
+		<div class="e2" id="partida13.2"></div>
+	</div>
+	<div class="partidos" id="partida9" onclick="cargarGanadorPerdedor(13)">
+		<div class="e1" id="partida14.1"></div>
+		<div class="vs">VS</div>
+		<div class="e2" id="partida14.2"></div>
+	</div>
+
+</div>
+<button class="arrow right" onclick="flechaD()">
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="80px" viewBox="0 0 50 80" xml:space="preserve">
+    <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="
+	0.375,0.375 45.63,38.087 0.375,75.8 "/>
+  </svg>
+</button>
+	
+<br><br><br>
+<div class="resultado" id="resultado" onclick="quitarGanadorPerdedor()">
+</div>
+<br><br><br><br><br><br><br><br>
+<div class="videos" id="videos" >
+	
+</div>
+<div class="lateral" id="busquedas" >
+</div>
+
+
+
+<script src="Equipos.js"></script>
+</body>
+</html>

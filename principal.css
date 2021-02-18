@@ -1,0 +1,231 @@
+body{
+  background-color: #000000;
+}
+
+
+/*Menu principal*/
+ul.ul1 {
+  background-color: #355166;
+  margin-left: -20px;
+  margin-right: -8px;
+  margin-top: -12px;
+  padding: 0;
+  font-size: 0;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+ul.ul1 li {
+  display: inline-block;
+  vertical-align: top;
+}
+ul.ul1 li a {
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  line-height: 60px;
+  padding: 0 35px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  font-weight: 300;
+  color: #fff;
+  font-family: 'Open Sans';
+}
+ul.ul1 li a:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #3498db;
+  z-index: -1;
+  transform: skewX(-30deg);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+ul.ul1 li:hover a,
+ul.ul1 li:focus a,
+ul.ul1 li.active a {
+  color: #fff;
+}
+ul.ul1 li:hover a:after,
+ul.ul1 li:focus a:after,
+ul.ul1 li.active a:after {
+  opacity: 1;
+}
+
+
+/*Buscador*/
+#input-search{
+  width: 300px;
+  height: 25px;
+  font-size: 20px;
+  text-indent: 10px;
+  margin-top: 15px;
+  margin-right: 50px;
+  float: right;
+  border-color: #3498db;
+  border-radius: 10px;
+  border-width: 3px;
+}
+
+
+/*Partidos*/
+.partidas{
+width:3000px;
+}
+.partidos{
+  background: #000000;
+  height: 125px;
+  color: rgb(255,255,255);
+  display: inline-block;
+  float: left;
+  border-right: 3px solid #355166;
+  border-radius: 5px;
+  width:200px;
+  text-align: center;
+  display: inline-block;
+  margin-top: 10px;
+  counter-increment: partidos;
+}
+.partidos:hover{
+  background-color: #3498db;
+}
+.e1{
+  vertical-align: middle;
+  margin:auto;
+  font-size: 16px;
+  font-family: 'Open Sans';
+  height: 45px;
+}
+.e2{
+  vertical-align: middle;
+  margin:auto;
+  font-family: 'Open Sans';
+  height: 40px;
+  margin-top: 8px;
+}
+.vs{
+  margin:auto;
+  font-weight: bold;
+  color: rgb(53,81,102);
+  font-size: 20px;
+  height: 20px;
+  font-family: 'Open Sans';
+}
+
+
+/*Div Lateral (Favoritos)*/
+.titulo{
+  line-height: 40px;
+  text-align: center;
+  width: 300px;
+  height: 50px;
+  border-bottom: 1px solid #3498db;
+  font-family: 'Open Sans';
+  font-size: 20px;
+  font-weight: bold;
+  color: #3498db;
+  border-radius: 10px;
+}
+.favorito{
+  line-height: 100px;
+  text-align: center;
+  width: 300px;
+  height: 90px;
+  font-family: 'Open Sans';
+  font-size: 20px;
+  color: white;
+  border-radius: 10px;
+}
+.favorito:hover{
+  background-color: #3498db;
+}
+div.lateral{
+  float: right;
+  margin-right: 100px;
+  width:300px;
+  height:520px;
+  border:1px solid #000;
+  border-color: #3498db;
+  border-radius: 10px;
+}
+
+
+/*Resultados*/
+.imagenes{
+  vertical-align: middle;
+  width: 70px;
+  height: 70px;
+}
+.resultado{
+  margin-left:  50px;
+  margin-bottom: 50px;
+  float: left;
+  color: #ffffff;
+  font-size: 50px;
+}
+.gana{
+  font-size: 50px;
+  color: green;
+}
+.pierde{
+  font-size: 50px;
+  color: red;
+}
+.pulsador{
+  padding: 15px;
+  float: right;
+  font-size: 12px;
+}
+
+
+/*Div Videos*/
+div.videos{
+
+  margin-left: 50px;
+  float: left;
+  width:840px;
+  height:1000px;
+  border:1px solid #000;
+  border-color: #3498db ;
+  border-radius: 10px;
+}
+.video1{
+  margin-top: 10px;
+  margin-left: 10px;
+  float: left;
+}
+.video2{
+  margin-top: 10px;
+  margin-right: 10px;
+  float: right;
+}
+.video3{
+  margin-top: 10px;
+  margin-left: 10px;
+  float: left;
+}
+.video4{
+  margin-top: 10px;
+  margin-right: 10px;
+  float: right;
+}
+.video5{
+  margin-top: 10px;
+  margin-left: 10px;
+  float: left;
+}
+.video6{
+  margin-top: 10px;
+  margin-right: 10px;
+  float: right;
+}
+
+/*Quitar Scroll*/
+::-webkit-scrollbar {
+    display: none;
+}
+
